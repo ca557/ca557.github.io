@@ -1,0 +1,37 @@
+.media-links{display: flex; justify-content: center; align-items: center}
+.footer-text{color: aquamarine; margin: auto auto}
+.videofon{height: 70vh; width: 100%; position: relative; display: flex; justify-content: center;
+align-items: center}
+.videofon video{height: 70vh; width: 100%; position: absolute; top: 0; left: 0; object-fit: cover;
+z-index: 1}
+.black{height: 70vh; width: 100%; position: absolute; top: 0; left: 0; object-fit: cover;
+z-index: 2; background-color: black; background: rgba(0.4,0.4,0.4,0.4)}
+.video-text{color: aquamarine; font-family: Bad Script; font-size: 100px; z-index: 2}
+.animation{animation: myAnim 2s ease 0s infinite normal forwards;}
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
